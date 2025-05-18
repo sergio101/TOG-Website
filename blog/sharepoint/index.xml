@@ -10,10 +10,10 @@
     <lastBuildDate>Sun, 18 May 2025 02:46:51 -0400</lastBuildDate>
     <atom:link href="https://www.thoseoptimizeguys.com/blog/sharepoint/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Sharing Files With Obsidian and Sharepoint</title>
-      <link>https://www.thoseoptimizeguys.com/sharing-files-with-obsidian-and-sharepoint/</link>
+      <title>How to Share Files Between Obsidian and SharePoint (Step-by-Step Guide)</title>
+      <link>https://www.thoseoptimizeguys.com/how-to-share-files-between-obsidian-and-sharepoint-step-by-step-guide/</link>
       <pubDate>Sun, 18 May 2025 02:46:51 -0400</pubDate>
-      <guid>https://www.thoseoptimizeguys.com/sharing-files-with-obsidian-and-sharepoint/</guid>
+      <guid>https://www.thoseoptimizeguys.com/how-to-share-files-between-obsidian-and-sharepoint-step-by-step-guide/</guid>
       <description>&lt;h1 id=&#34;the-problem&#34;&gt;The Problem&lt;/h1&gt;&#xA;&lt;p&gt;I have been searching for a way to collaborate on documentation for software projects for a long time. While the projects to be pretty complex, our needs for bells and whlstles is low. Our requirements are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Minimal intrusions from notifications&lt;/li&gt;&#xA;&lt;li&gt;Markdown centric&lt;/li&gt;&#xA;&lt;li&gt;Granular access controls&lt;/li&gt;&#xA;&lt;li&gt;A reasonable pricing structure.&#xA;That&amp;rsquo;s really it.&#xA;We tried several documentation systems, and they were all either overkill, or created documentation that smacked of psychopathy.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-current-solution&#34;&gt;The current solution&lt;/h2&gt;&#xA;&lt;p&gt;Putting together some of our everyday freebie tools seems be creating a viable solution. We&amp;rsquo;ve been using the following:&lt;/p&gt;</description>
     </item>
   </channel>
