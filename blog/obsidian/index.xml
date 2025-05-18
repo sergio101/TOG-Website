@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Those Optimize Guys</title>
-    <link>https://www.thoseoptimizeguys.com/blog/</link>
-    <description>Recent content in Blog on Those Optimize Guys</description>
+    <title>Obsidian on Those Optimize Guys</title>
+    <link>https://www.thoseoptimizeguys.com/blog/obsidian/</link>
+    <description>Recent content in Obsidian on Those Optimize Guys</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, sergio_101.</copyright>
     <lastBuildDate>Sun, 18 May 2025 02:46:51 -0400</lastBuildDate>
-    <atom:link href="https://www.thoseoptimizeguys.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.thoseoptimizeguys.com/blog/obsidian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sharing Files With Obsidian and Sharepoint</title>
       <link>https://www.thoseoptimizeguys.com/sharing-files-with-obsidian-and-sharepoint/</link>

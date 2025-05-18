@@ -15,18 +15,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" href="https://www.thoseoptimizeguys.com/images/favicon.png" />
-<title>404</title>
-<meta name="title" content="404 Page not found" />
-<meta name="description" content="Master macOS productivity with automation tips using Alfred, Shortcuts, Drafts, and DEVONthink. Leverage AI chatbots and smart workflows to streamline your daily work." />
-<meta name="keywords" content="obsidian,sharepoint," />
+<title>Sharing Files With Obsidian and Sharepoint | Those Optimize Guys</title>
+<meta name="title" content="Sharing Files With Obsidian and Sharepoint" />
+<meta name="description" content="How to share Obsidian access to a Sharepoint folder" />
+<meta name="keywords" content="Sharepoint,Obsidian," />
 
 
-<meta property="og:url" content="https://www.thoseoptimizeguys.com/404.html">
+<meta property="og:url" content="https://www.thoseoptimizeguys.com/sharing-files-with-obsidian-and-sharepoint/">
   <meta property="og:site_name" content="Those Optimize Guys">
-  <meta property="og:title" content="404 Page not found">
-  <meta property="og:description" content="Master macOS productivity with automation tips using Alfred, Shortcuts, Drafts, and DEVONthink. Leverage AI chatbots and smart workflows to streamline your daily work.">
+  <meta property="og:title" content="Sharing Files With Obsidian and Sharepoint">
+  <meta property="og:description" content="How to share Obsidian access to a Sharepoint folder">
   <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-05-18T02:46:51-04:00">
+    <meta property="article:modified_time" content="2025-05-18T02:46:51-04:00">
+    <meta property="article:tag" content="Sharepoint">
+    <meta property="article:tag" content="Obsidian">
     <meta property="og:image" content="https://www.thoseoptimizeguys.com/images/share.png">
 
 
@@ -34,15 +39,19 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.thoseoptimizeguys.com/images/share.png">
-  <meta name="twitter:title" content="404 Page not found">
-  <meta name="twitter:description" content="Master macOS productivity with automation tips using Alfred, Shortcuts, Drafts, and DEVONthink. Leverage AI chatbots and smart workflows to streamline your daily work.">
+  <meta name="twitter:title" content="Sharing Files With Obsidian and Sharepoint">
+  <meta name="twitter:description" content="How to share Obsidian access to a Sharepoint folder">
 
 
 
 
-  <meta itemprop="name" content="404 Page not found">
-  <meta itemprop="description" content="Master macOS productivity with automation tips using Alfred, Shortcuts, Drafts, and DEVONthink. Leverage AI chatbots and smart workflows to streamline your daily work.">
+  <meta itemprop="name" content="Sharing Files With Obsidian and Sharepoint">
+  <meta itemprop="description" content="How to share Obsidian access to a Sharepoint folder">
+  <meta itemprop="datePublished" content="2025-05-18T02:46:51-04:00">
+  <meta itemprop="dateModified" content="2025-05-18T02:46:51-04:00">
+  <meta itemprop="wordCount" content="327">
   <meta itemprop="image" content="https://www.thoseoptimizeguys.com/images/share.png">
+  <meta itemprop="keywords" content="Sharepoint,Obsidian">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -226,8 +235,55 @@
 </nav>
 </header>
   <main>
-<h1>404</h1>
-<h2>ʕノ•ᴥ•ʔノ ︵ ┻━┻</h2>
+
+<h1>Sharing Files With Obsidian and Sharepoint</h1>
+<p>
+  <i>
+    <time datetime='2025-05-18'>
+      18 May, 2025
+    </time>
+  </i>
+</p>
+
+<content>
+  <h1 id="the-problem">The Problem</h1>
+<p>I have been searching for a way to collaborate on documentation for software projects for a long time. While the projects to be pretty complex, our needs for bells and whlstles is low. Our requirements are:</p>
+<ul>
+<li>Minimal intrusions from notifications</li>
+<li>Markdown centric</li>
+<li>Granular access controls</li>
+<li>A reasonable pricing structure.
+That&rsquo;s really it.
+We tried several documentation systems, and they were all either overkill, or created documentation that smacked of psychopathy.</li>
+</ul>
+<h2 id="the-current-solution">The current solution</h2>
+<p>Putting together some of our everyday freebie tools seems be creating a viable solution. We&rsquo;ve been using the following:</p>
+<ul>
+<li><a href="https://obsidian.md/">Obsidian</a> - A free markup document management solution.</li>
+<li>SharePoint - Microsoft&rsquo;s OneDrive based file sharing system.</li>
+</ul>
+<p>Obsidian allows users to create a &ldquo;Vault&rdquo; of files, or, more effectively, manage an existing directory of Markdown files.</p>
+<p>SharePoint allows users to share a directory among collaborators. The directory owner can assign access privileges to collaborators on a folder-by-folder basis.</p>
+<p>This all sounds great until.</p>
+<h2 id="one-small-hitch">One small hitch</h2>
+<p>The issue with this solution is that each Obsidian user connecting to the documentation folder expects a <code>.obsidian</code> directory in the root of the vault. The problem is that most users have highly customized Obsidian installations. Forcing the users to share configurations is not a practical solution.</p>
+<h3 id="the-fix">The Fix</h3>
+<p>The fix to this problem is to create a symbolic link in the SharePoint drive that points back to the user&rsquo;s local drive. Please note that the user must complete this step before accessing the directory with Obsidian for the first time.</p>
+<p>When setting this up for the first time, you&rsquo;ll need to create a destination for your obsidian configs:</p>
+<pre tabindex="0"><code>mkdir -p ~/.obsidian-configs/&lt;vault-name&gt;
+</code></pre><p>Then, in SharePoint, create a link to the <code>.obsidian</code> directory:</p>
+<pre tabindex="0"><code>ln -s ~/.obsidian-configs/&lt;vault-name&gt; /path/to/your/vault/.obsidian
+</code></pre><p>Also keep in mind that each user must do the above step before accessing the directory with Obsidian. Once they do that, the Obsidian configurations will be referenced from their local drive.</p>
+<p>Not a super big hitch, but there&rsquo;s always a hitch.</p>
+
+</content>
+<p>
+  
+  <a href="https://www.thoseoptimizeguys.com/blog/sharepoint/">#Sharepoint</a>
+  
+  <a href="https://www.thoseoptimizeguys.com/blog/obsidian/">#Obsidian</a>
+  
+</p>
 
   </main>
   <footer><div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 2rem;">

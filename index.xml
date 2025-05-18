@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2020, sergio_101.</copyright>
-    <lastBuildDate>Sun, 18 May 2025 01:40:01 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 18 May 2025 02:46:51 -0400</lastBuildDate>
     <atom:link href="https://www.thoseoptimizeguys.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
@@ -17,11 +17,11 @@
       <description>&lt;h1 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h1&gt;&#xA;&lt;p&gt;By day, I am a software engineer. My current skillset includes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Software architecture specification&lt;/li&gt;&#xA;&lt;li&gt;Developing web applications using the &lt;a href=&#34;https://www.phoenixframework.org/&#34;&gt;Phoenix Framework&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Modeling Graph Data using &lt;a href=&#34;https://neo4j.com/&#34;&gt;Neo4j Graph Database&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Managing large software projects&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;By night, I am interested in:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Amateur radio (Callsign &lt;a href=&#34;https://www.qrz.com/db/KB8QPT&#34;&gt;KB8QPT&lt;/a&gt;) including Packet Radio, Traffic Handling, QRP, and Morse Code (CW)&lt;/li&gt;&#xA;&lt;li&gt;Process automation and optimization&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.instagram.com/sergio_101/&#34;&gt;Photography&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;The &lt;a href=&#34;https://geminiquickst.art/&#34;&gt;Gemini Protocol&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I am using this site as a place to solidify the ideas that I implement in the hopes to gain clarity on them, and hopefully, help someone else along their journey.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://www.thoseoptimizeguys.com/markdown-syntax-guide/</link>
-      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.thoseoptimizeguys.com/markdown-syntax-guide/</guid>
-      <description>&lt;p&gt;For a quick cheatsheet, check out &lt;a href=&#34;https://simplemde.com/markdown-guide&#34;&gt;https://simplemde.com/markdown-guide&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      <title>Sharing Files With Obsidian and Sharepoint</title>
+      <link>https://www.thoseoptimizeguys.com/sharing-files-with-obsidian-and-sharepoint/</link>
+      <pubDate>Sun, 18 May 2025 02:46:51 -0400</pubDate>
+      <guid>https://www.thoseoptimizeguys.com/sharing-files-with-obsidian-and-sharepoint/</guid>
+      <description>&lt;h1 id=&#34;the-problem&#34;&gt;The Problem&lt;/h1&gt;&#xA;&lt;p&gt;I have been searching for a way to collaborate on documentation for software projects for a long time. While the projects to be pretty complex, our needs for bells and whlstles is low. Our requirements are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Minimal intrusions from notifications&lt;/li&gt;&#xA;&lt;li&gt;Markdown centric&lt;/li&gt;&#xA;&lt;li&gt;Granular access controls&lt;/li&gt;&#xA;&lt;li&gt;A reasonable pricing structure.&#xA;That&amp;rsquo;s really it.&#xA;We tried several documentation systems, and they were all either overkill, or created documentation that smacked of psychopathy.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-current-solution&#34;&gt;The current solution&lt;/h2&gt;&#xA;&lt;p&gt;Putting together some of our everyday freebie tools seems be creating a viable solution. We&amp;rsquo;ve been using the following:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
