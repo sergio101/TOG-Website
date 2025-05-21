@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CW48YVV9LB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CW48YVV9LB');
+  </script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://www.thoseoptimizeguys.com/images/favicon.png" />
+<title>Using Alfred to append to a Playlist in Apple Notes | Those Optimize Guys</title>
+<meta name="title" content="Using Alfred to append to a Playlist in Apple Notes" />
+<meta name="description" content="How to use Alfred to add an entry to the top of an Apple Note set up for storing such things" />
+<meta name="keywords" content="Alfred,AppleNotes,Automation," />
+
+
+<meta property="og:url" content="https://www.thoseoptimizeguys.com/using-alfred-to-append-to-a-playlist-in-apple-notes/">
+  <meta property="og:site_name" content="Those Optimize Guys">
+  <meta property="og:title" content="Using Alfred to append to a Playlist in Apple Notes">
+  <meta property="og:description" content="How to use Alfred to add an entry to the top of an Apple Note set up for storing such things">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-05-20T21:27:29-04:00">
+    <meta property="article:modified_time" content="2025-05-20T21:27:29-04:00">
+    <meta property="article:tag" content="Alfred">
+    <meta property="article:tag" content="AppleNotes">
+    <meta property="article:tag" content="Automation">
+    <meta property="og:image" content="https://www.thoseoptimizeguys.com/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.thoseoptimizeguys.com/images/share.png">
+  <meta name="twitter:title" content="Using Alfred to append to a Playlist in Apple Notes">
+  <meta name="twitter:description" content="How to use Alfred to add an entry to the top of an Apple Note set up for storing such things">
+
+
+
+
+  <meta itemprop="name" content="Using Alfred to append to a Playlist in Apple Notes">
+  <meta itemprop="description" content="How to use Alfred to add an entry to the top of an Apple Note set up for storing such things">
+  <meta itemprop="datePublished" content="2025-05-20T21:27:29-04:00">
+  <meta itemprop="dateModified" content="2025-05-20T21:27:29-04:00">
+  <meta itemprop="wordCount" content="626">
+  <meta itemprop="image" content="https://www.thoseoptimizeguys.com/images/share.png">
+  <meta itemprop="keywords" content="Alfred,AppleNotes,Automation">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --width: 720px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --code-background-color: #f2f2f2;
+    --code-color: #222;
+    --blockquote-color: #222;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #01242e;
+      --heading-color: #eee;
+      --text-color: #ddd;
+      --link-color: #8cc2dd;
+      --visited-color: #8b6fcb;
+      --code-background-color: #000;
+      --code-color: #ddd;
+      --blockquote-color: #ccc;
+    }
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--code-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    padding: 1px 15px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+</style>
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ 
+ 
+<link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Those Optimize Guys</h2>
+</a>
+<nav>
+<a href="/">Home</a>
+
+<a href="/about/">About</a>
+
+<a href="/blog/">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Using Alfred to append to a Playlist in Apple Notes</h1>
+<p>
+  <i>
+    <time datetime='2025-05-20'>
+      20 May, 2025
+    </time>
+  </i>
+</p>
+
+<content>
+  <h2 id="the-problem">The Problem</h2>
+<p>I listen to about ten hours of music a day. Most day (except Friday) I am my own DJ for the entire day. When I am not listening to the radio, I generally listen to full albums.</p>
+<p>At random times during the day, albums come to mind that I want to quickly store for later recall. I am currently storing this data in an Apple Note called &ldquo;Playlist.&rdquo;</p>
+<p>The best solution I can come up with at the time is to use <a href="https://www.alfredapp.com/">Alfred</a>. As I started to tackle this problem, I realized that adding text to the top of an Apple Note does just that, adds the note to the top of the note, above the title. Digging around, there seems to be no other way to do this than to use AppleScript. Unfortunately, I never learned AppleScript, and really have no desire to spend any time learning it.</p>
+<h2 id="the-solution">The solution</h2>
+<p>To create the script, I turned to ChatGPT. I have been a developer for more than 30 years, so I have a good grasp of what the solution would look like, I have no idea how to write it. I crafted a good enough prompt, and it hit it pretty close . I have definite ideas about using AI to generate source code, and I&rsquo;ll talk about that in another entry.</p>
+<p>This got me precisely what I needed, but kept me thinking about ways to create a better solution. More on that below..</p>
+<p>Here&rsquo;s what the solution does. Typing the following into Alfred:</p>
+<blockquote>
+<p>playlist echo and the bunnymen</p></blockquote>
+<p>Inserts something like:</p>
+<blockquote>
+<p>2025-05-20 21:00:11
+echo and the bunnymen</p></blockquote>
+<p>At the top of the Playlist Note.</p>
+<p>That&rsquo;s it!</p>
+<p>Although this is a tiny bit of automation, it has allowed me to quickly brain dump without breaking stride on whatever I am working on. Being able to look at weeks of entries is also fun, and inspires album listens for weeks to come.</p>
+<h2 id="some-ideas-for-update">Some ideas for update</h2>
+<p>There are a few things I&rsquo;d like to change for others who might want to use this script:</p>
+<ul>
+<li>The script should check if the Note exists. If it does not, it should be created.</li>
+<li>The script should allow the user to store the Playist Note wherever they want.</li>
+<li>For Super Bunda Points, the script should check for the album name in the album title, and insert a link to the album in that streaming service.</li>
+</ul>
+<p>But for now, it has done a great job at doing what I need.</p>
+<h2 id="the-ai-generated-applescript">The AI generated AppleScript</h2>
+<p>Here is the source code generated.</p>
+<pre tabindex="0"><code>on run(argv)
+    set inputText to item 1 of argv
+    set noteTitle to &#34;Playlist&#34; -- Your fixed note title
+
+    -- Get current date and time
+    set currentDateTime to (do shell script &#34;date &#39;+%Y-%m-%d %H:%M:%S&#39;&#34;)
+    set stampedText to currentDateTime &amp; &#34;&lt;br&gt;&#34; &amp; inputText
+
+    tell application &#34;Notes&#34;
+        set theFolder to first folder whose name is &#34;Notes&#34;
+        set theNote to first note in theFolder whose name is noteTitle
+
+        set currentBody to the body of theNote
+
+        -- Split the current body into lines
+        set AppleScript&#39;s text item delimiters to &#34;&lt;br&gt;&#34;
+        set bodyLines to text items of currentBody
+        set AppleScript&#39;s text item delimiters to &#34;&#34;
+
+        -- Extract the title and the rest of the note
+        set noteTitleLine to item 1 of bodyLines
+        set remainingBody to &#34;&#34;
+        if (count of bodyLines) &gt; 1 then
+            set AppleScript&#39;s text item delimiters to &#34;&lt;br&gt;&#34;
+            set remainingBody to (items 2 thru -1 of bodyLines) as string
+            set AppleScript&#39;s text item delimiters to &#34;&#34;
+        end if
+
+        -- Construct the updated body
+        set updatedBody to noteTitleLine &amp; &#34;&lt;br&gt;&lt;br&gt;&#34; &amp; stampedText
+        if remainingBody is not &#34;&#34; then
+            set updatedBody to updatedBody &amp; &#34;&lt;br&gt;&lt;br&gt;&#34; &amp; remainingBody
+        end if
+
+        set the body of theNote to updatedBody
+    end tell
+end run
+</code></pre><h2 id="links">Links</h2>
+<ul>
+<li><a href="/attachments/add-to-playlist-note.alfredworkflow">The Add to Playlist Plugin</a></li>
+</ul>
+
+</content>
+<p>
+  
+  <a href="https://www.thoseoptimizeguys.com/blog/alfred/">#Alfred</a>
+  
+  <a href="https://www.thoseoptimizeguys.com/blog/applenotes/">#AppleNotes</a>
+  
+  <a href="https://www.thoseoptimizeguys.com/blog/automation/">#Automation</a>
+  
+</p>
+
+  </main>
+  <footer><div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 2rem;">
+  <a href="https://social.sixdegreesofohio.com/@sergio_101" target="_blank">
+    <i class="fa-brands fa-mastodon fa-2xl" style="color:#6364ff;"></i>
+  </a>
+  <a href="https://www.facebook.com/sergio101" target="_blank">
+    <i class="fa-brands fa-facebook fa-2xl" style="color:#6364ff;"></i>
+  </a>
+  <a href="https://www.instagram.com/sergio_101/" target="_blank">
+    <i class="fa-brands fa-instagram fa-2xl" style="color:#6364ff;"></i>
+  </a>
+</div>
+Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+  
+</body>
+
+</html>

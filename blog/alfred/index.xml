@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alfred on Those Optimize Guys</title>
+    <link>https://www.thoseoptimizeguys.com/blog/alfred/</link>
+    <description>Recent content in Alfred on Those Optimize Guys</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2020, sergio_101.</copyright>
+    <lastBuildDate>Tue, 20 May 2025 21:27:29 -0400</lastBuildDate>
+    <atom:link href="https://www.thoseoptimizeguys.com/blog/alfred/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Alfred to append to a Playlist in Apple Notes</title>
+      <link>https://www.thoseoptimizeguys.com/using-alfred-to-append-to-a-playlist-in-apple-notes/</link>
+      <pubDate>Tue, 20 May 2025 21:27:29 -0400</pubDate>
+      <guid>https://www.thoseoptimizeguys.com/using-alfred-to-append-to-a-playlist-in-apple-notes/</guid>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;I listen to about ten hours of music a day. Most day (except Friday) I am my own DJ for the entire day. When I am not listening to the radio, I generally listen to full albums.&lt;/p&gt;&#xA;&lt;p&gt;At random times during the day, albums come to mind that I want to quickly store for later recall. I am currently storing this data in an Apple Note called &amp;ldquo;Playlist.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
